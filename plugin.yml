@@ -1,0 +1,21 @@
+name: JederWhitelist
+version: 1.0
+anthor: Ostrichbeta Chan
+main: com.jeder.whitelist.Main
+commands:
+  jederWhitelist:
+    description: The Main Command
+    usage: /jederWhitelist <add|list|remove>
+    aliases: [jw]
+permissions:
+  jederWhitelist.*:
+    description: All the commands of this plugin
+    children:
+      jederWhitelist.add: true
+      jederWhitelist.remove: true
+  jederWhitelist.add:
+    description: Allows you add a player to the Whitelist
+    default: op
+  jederWhitelist.remove:
+    description: Allows you remove a player from the Whitelist
+    default: op
